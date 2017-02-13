@@ -6,6 +6,7 @@
     $url='http://cnusa.org/readnews.aspx?newsid=';
     $post_id = '14730';
     $url = $url.$post_id;
+    $host = 'http://cnusa.org';
 
     $raw_result = curl_get($url);
     if($raw_result[0]!==200){
@@ -34,11 +35,11 @@
 
 
     $post_date_day = $html->find('.date .day',0);
-    $post_date_day = $post_date_day->plaintext;//get post day
+    $post_date_day = trim($post_date_day->plaintext);//get post day
     $post_date_month = $html->find('.date .month',0);
-    $post_date_month = $post_date_month->plaintext;//get post month
+    $post_date_month = trim($post_date_month->plaintext);//get post month
     $post_date_year = $html->find('.date .year',0);
-    $post_date_year = $post_date_year->plaintext;//get post year
+    $post_date_year = trim($post_date_year->plaintext);//get post year
 
     $post_body = $html->find('.date',0)->parent()->next_sibling();
     //$post_body_plaintext = $post_body->plaintext;
@@ -59,22 +60,78 @@ replace the images in postbody with the address
     //echo "post body(plaintext)"."<br><br>";
     //echo $post_body_plaintext;
     
-    $num = 1;
+    $num = 1;//count the p's order
+    $whole_content =$post_title.'\n\n' ;
     foreach ($post_body_segments as $item){
+        
         if(has_pics($item)){
             //echo "#".$num." is:"."there is a pic "."<br>";
             $pic_url = $item->find("img",0)->getAttribute("src");
+            $whole_content .=$pic_url."\n\n";
             echo "#".$num." has a pic as ".$pic_url."<br>";
+            $image_dir="images/".$post_date_year."/".$post_date_month."/".$post_date_day."/".$post_id."/".$num.".jpg";
+            $image_url=$host.$pic_url;
+            image_save($image_url,$image_dir);
+            
         }else{
-            echo "#".$num." is:".$item->plaintext."<br>";
+            $item_plaintext = $item->plaintext;
+            echo "#".$num." is:".$item_plaintext."<br>";
+            $whole_content .=$item_plaintext."\n\n";
         }
         $num++;
     }
+    $file_dir = $post_date_year."/".$post_date_month."/".$post_date_day."/".$post_id.".txt";
+    file_save($file_dir,$whole_content);
+   
+    //create_database_sqlite();
     
+    /*$item=array(      post_title=>$post_title,
+                               post_year=>$post_date_year,
+                               post_month=>$post_date_month,
+                               post_day=>$post_date_day,
+                               post_body=>"",
+                               post_img1_url=>"",
+                               post_img2_url=>"",
+                               post_img3_url=>"",
+                               post_img4_url=>"",
+                               post_img5_url=>"",
+                               post_img6_url=>"",
+                               post_img7_url=>"",
+                               post_img8_url=>"")
+*/
+    //add_to_db($item);
 
     echo "</body></html>";
 //end HTML
 
+function file_save($dir,$contents){
+    $parts = explode('/',$dir);
+    $file = array_pop($parts);
+    $dir = ".";
+    foreach($parts as $part){
+        if(!is_dir($dir.="/".$part))
+            mkdir($dir) or die('failed to create folder ');
+    }
+    file_put_contents($dir."/".$file,$contents) or die("Error when write the file");
+}
+
+function image_save($url,$dir){
+    $parts = explode('/',$dir);
+    $file = array_pop($parts);
+    $dir = ".";
+    foreach($parts as $part){
+        if(!is_dir($dir.="/".$part))
+            mkdir($dir) or die('failed to create folder ');
+    }
+    $dir .= "/".$file;
+    $ch = curl_init($url);
+    $fp = fopen($dir,'wb') or die('failed to fopen stream'.$dir.'  '.$url);
+    curl_setopt($ch,CURLOPT_FILE,$fp);
+    curl_setopt($ch,CURLOPT_HEADER,0);
+    curl_exec($ch);
+    curl_close($ch);
+    fclose($fp);
+}
 
 function has_pics($item){
     if($item->find("img",0) === NULL){
@@ -186,10 +243,10 @@ function create_database_sqlite(){
     $db->exec($query) or die('Create db failed');
 }
 function add_to_db($item=array(post_title=>"",
-                               post_year=>2005,
-                               post_month=>1,
-                               post_day=>1,
-                               post_body="",
+                               post_year=>"2005",
+                               post_month=>"1",
+                               post_day=>"1",
+                               post_body=>"",
                                post_img1_url=>"",
                                post_img2_url=>"",
                                post_img3_url=>"",
@@ -201,19 +258,19 @@ function add_to_db($item=array(post_title=>"",
     $db = new SQLite3('cuscc') or die('Unable to open database');
     $query = 'INSERT INTO posts(post_title,post_year,post_month,post_day,post_body,post_img1_url,post_img2_url,post_img3_url,post_img4_url,post_img5_url,post_img6_url,post_img7_url,post_img8_url)
     VALUES(
-        '$item[post_title]',
-        '$item[post_year]',
-        '$item[post_month]',
-        '$item[post_day]',
-        '$item[post_body]',
-        '$item[post_img1_url]',
-        '$item[post_img2_url]',
-        '$item[post_img3_url]',
-        '$item[post_img4_url]',
-        '$item[post_img5_url]',
-        '$item[post_img6_url]',
-        '$item[post_img7_url]',
-        '$item[post_img8_url]'
+        '.$item[post_title].',
+        '.$item[post_year].',
+        '.$item[post_month].',
+        '.$item[post_day].',
+        '.$item[post_body].',
+        '.$item[post_img1_url].',
+        '.$item[post_img2_url].',
+        '.$item[post_img3_url].',
+        '.$item[post_img4_url].',
+        '.$item[post_img5_url].',
+        '.$item[post_img6_url].',
+        '.$item[post_img7_url].',
+        '.$item[post_img8_url].'
     )';
     $db->query($query) or die('add data failed');
     
