@@ -59,7 +59,7 @@ replace the images in postbody with the address
     echo "post was published on Year: ".$post_date_year." Month: ".$post_date_month." Day: ".$post_date_day."<br>";
     //echo "post body(plaintext)"."<br><br>";
     //echo $post_body_plaintext;
-    
+    $post_imgs = array(0=>'',1=>'',2=>'',3=>'',4=>'',5=>'',6=>'',7=>'',8=>'');//post imgs local url
     $num = 1;//count the p's order
     $whole_content =$post_title.'\n\n' ;
     foreach ($post_body_segments as $item){
@@ -72,7 +72,7 @@ replace the images in postbody with the address
             $image_dir="images/".$post_date_year."/".$post_date_month."/".$post_date_day."/".$post_id."/".$num.".jpg";
             $image_url=$host.$pic_url;
             image_save($image_url,$image_dir);
-            
+            $post_imgs[$num] = $image_dir;
         }else{
             $item_plaintext = $item->plaintext;
             echo "#".$num." is:".$item_plaintext."<br>";
@@ -83,23 +83,24 @@ replace the images in postbody with the address
     $file_dir = $post_date_year."/".$post_date_month."/".$post_date_day."/".$post_id.".txt";
     file_save($file_dir,$whole_content);
    
-    //create_database_sqlite();
+    create_database_sqlite();
     
-    /*$item=array(      post_title=>$post_title,
-                               post_year=>$post_date_year,
-                               post_month=>$post_date_month,
-                               post_day=>$post_date_day,
-                               post_body=>"",
-                               post_img1_url=>"",
-                               post_img2_url=>"",
-                               post_img3_url=>"",
-                               post_img4_url=>"",
-                               post_img5_url=>"",
-                               post_img6_url=>"",
-                               post_img7_url=>"",
-                               post_img8_url=>"")
-*/
-    //add_to_db($item);
+    $item=array();
+    $item["post_title"] = $post_title;
+    $item["post_year"]=$post_date_year;
+    $item["post_month"]=$post_date_month;
+    $item["post_day"]=$post_date_day;
+    $item["post_body"]=$file_dir;
+    $item["post_img1_url"]=$post_imgs[1];
+    $item["post_img2_url"]=$post_imgs[2];
+    $item["post_img3_url"]=$post_imgs[3];
+    $item["post_img4_url"]=$post_imgs[4];
+    $item["post_img5_url"]=$post_imgs[5];
+    $item["post_img6_url"]=$post_imgs[6];
+    $item["post_img7_url"]=$post_imgs[7];
+    $item["post_img8_url"]=$post_imgs[8];  
+
+    add_to_db($item);
 
     echo "</body></html>";
 //end HTML
@@ -242,37 +243,37 @@ function create_database_sqlite(){
     )';
     $db->exec($query) or die('Create db failed');
 }
-function add_to_db($item=array(post_title=>"",
-                               post_year=>"2005",
-                               post_month=>"1",
-                               post_day=>"1",
-                               post_body=>"",
-                               post_img1_url=>"",
-                               post_img2_url=>"",
-                               post_img3_url=>"",
-                               post_img4_url=>"",
-                               post_img5_url=>"",
-                               post_img6_url=>"",
-                               post_img7_url=>"",
-                               post_img8_url=>"")){
+function add_to_db($item=array("post_title"=>"",
+                               "post_year"=>"2005",
+                               "post_month"=>"1",
+                               "post_day"=>"1",
+                               "post_body"=>"",
+                               "post_img1_url"=>"",
+                               "post_img2_url"=>"",
+                               "post_img3_url"=>"",
+                               "post_img4_url"=>"",
+                               "post_img5_url"=>"",
+                               "post_img6_url"=>"",
+                               "post_img7_url"=>"",
+                               "post_img8_url"=>"")){
     $db = new SQLite3('cuscc') or die('Unable to open database');
     $query = 'INSERT INTO posts(post_title,post_year,post_month,post_day,post_body,post_img1_url,post_img2_url,post_img3_url,post_img4_url,post_img5_url,post_img6_url,post_img7_url,post_img8_url)
     VALUES(
-        '.$item[post_title].',
-        '.$item[post_year].',
-        '.$item[post_month].',
-        '.$item[post_day].',
-        '.$item[post_body].',
-        '.$item[post_img1_url].',
-        '.$item[post_img2_url].',
-        '.$item[post_img3_url].',
-        '.$item[post_img4_url].',
-        '.$item[post_img5_url].',
-        '.$item[post_img6_url].',
-        '.$item[post_img7_url].',
-        '.$item[post_img8_url].'
+        '.$item["post_title"].',
+        '.$item["post_year"].',
+        '.$item["post_month"].',
+        '.$item["post_day"].',
+        '.$item["post_body"].',
+        '.$item["post_img1_url"].',
+        '.$item["post_img2_url"].',
+        '.$item["post_img3_url"].',
+        '.$item["post_img4_url"].',
+        '.$item["post_img5_url"].',
+        '.$item["post_img6_url"].',
+        '.$item["post_img7_url"].',
+        '.$item["post_img8_url"].'
     )';
-    $db->query($query) or die('add data failed');
+    $db->query($query) or die('add data failed'.$query);
     
 }
 
