@@ -1,0 +1,64 @@
+To Match Its Rivals, Facebook Adds Video Sharing\n\n
+
+http://graphics8.nytimes.com/images/2013/06/21/business/21facebook-web1/21facebook-web1-articleLarge.jpg
+
+  	MENLO PARK, Calif. &mdash; If &ldquo;60 Minutes&rdquo; were being dreamed up today, its producers might very well have ditched the idea and gone with &ldquo;6 Seconds&rdquo; instead.  
+
+  	&nbsp;
+
+  	&nbsp;
+
+  	That&rsquo;s the maximum length of the videos on&nbsp;Vine, a mobile application owned by Twitter that has grown like one of those creeping plants, to close to 20 million users since it sprouted five months ago. 
+
+  	On Thursday, Facebook&nbsp;introduced its own short-video service, built into Instagram, the popular photo-sharing app that Facebook bought last year. The new feature, which is available now, allows users to record up to 15 seconds of video, enhance it with filters and post it immediately. 
+
+  	&ldquo;We&rsquo;ve worked a ton on making it fast, simple and beautiful,&rdquo; said Kevin Systrom, co-founder of Instagram, at a news conference at Facebook&rsquo;s Silicon Valley headquarters. &ldquo;What we did to photos we just did for video.&rdquo; 
+
+  	The move underscores how video has increasingly become critical to companies like Facebook, which is seeking ways to keep its 1.1 billion users entertained and engaged &mdash; particularly on their mobile devices. Video also represents a lucrative and fast-growing area of online advertising, with revenue in the United States expected to top $4 billion this year, according to the research firm eMarketer. 
+
+  	&ldquo;Sharing video is inherently mobile,&rdquo; said Gene Munster, an analyst with Piper Jaffray. And Facebook needed to get into the game, he said, adding that the company had to &ldquo;check that box to remain relevant to their users.&rdquo; 
+
+  	Although neither Vine nor Facebook&rsquo;s service are currently offering advertising, it would be easy to sprinkle a sponsor&rsquo;s video ad into the legions of user-generated videos, much as both services do now with text ads in their users&rsquo; feeds. 
+
+  	Jan Rezab, chief executive of the research firm Socialbakers, said that online viewers had a high tendency to engage with video ads, especially if they were deftly inserted into a stream of other content. 
+
+  	&ldquo;You could actually monetize Vines and the Vine channel by introducing sponsored Vines. Every 10th Vine could be a sponsored Vine,&rdquo; he said. Facebook could do something similar. 
+
+  	If the short-video format proves to be more than a passing fad, a great deal of advertising revenue could be at stake. YouTube, Google&rsquo;s longer-format video service, brings in billions of dollars a year in advertising. 
+
+  	Facebook already gets about 30 percent of its advertising revenue from mobile, according to its last quarterly earnings report. If the company could figure out how to aim the video content that individual customers want, it could significantly increase the revenue it is able to make from mobile advertising. 
+
+  	Video holds a promise that goes beyond what static images and nuggets of text can offer. It tends to engage even the most distracted users, particularly when the snippets are easily digestible. 
+
+  	Vine-length videos are ideal when scrolling through a Twitter feed on a smartphone, Mr. Rezab said. Videos tend to be funny, and &ldquo;you don&rsquo;t have to hit the play button. The sound kicks in as you&rsquo;re scrolling over it.&rdquo; 
+
+  	&ldquo;The six seconds is just magical,&rdquo; Mr. Rezab said. 
+
+  	That sense of ease and simplicity was what the Vine team was striving for when it built the app, said Michael Sippey, Twitter&rsquo;s vice president of product, in an interview. 
+
+  	&ldquo;We wanted to make mobile video without a start or stop button,&rdquo; he said. &ldquo;If you give people simple tools to tell stories, they&rsquo;ll tell really great stories.&rdquo; 
+
+  	Some will be funny or trivial, but others will record momentous events, he said, such as this week&rsquo;s Vine of the&nbsp;protests in Brazil. 
+
+  	The Instagram team sought much the same thing, although it added other features, such as the ability to delete portions of a 15-second video and rerecord them. It also included an image stabilization feature to reduce the choppiness that often comes with hand-held recording. 
+
+  	The simplicity of both apps &mdash; press your finger to the screen to record, lift it to stop and click to publish &mdash; makes it nearly as easy to share a video as it is to post a photograph. And the form seems aptly suited to modern vanities and attention spans &mdash; people peek at their smartphones in line at the grocery store but may also feel moved to&nbsp;document the visit. 
+
+  	Vine has caught the fancy of everyone from the White House, which recently filmedPresident Obama pedaling&nbsp;a stationary water filtration bicycle, to marketers like Burberry, which this week compressed its entire runway show of men&rsquo;s fashions into a&nbsp;six-second blur. 
+
+  	Vine, which is operated as a separate service, has drawn new users to the Twitter microblogging platform, Mr. Sippey said. However, &ldquo;we think that they are potentially separate networks. You may love my tweets but hate my Vines.&rdquo; 
+
+  	Although Twitter has no current plans to directly make money from the popularity of Vine, &ldquo;any tweet that has photo or video in it will drive engagement,&rdquo; Mr. Sippey said, making the service more valuable to advertisers.  
+
+  	&nbsp;
+
+  	&nbsp;
+
+  	The biggest challenge for both Vine and Facebook&rsquo;s new service is that video-sharing applications are inherently harder to use than photo-sharing applications. 
+
+  	&ldquo;Taking a photograph and applying a filter is something that is very easy to do &mdash; with a few clicks, it&rsquo;s done,&rdquo; said Brian Blau, an analyst at the research firm Gartner. With video, &ldquo;the level of complexity goes up,&rdquo; he said. 
+
+  	Vine, for example, can bog down after a video is shot, as the phone crunches through the data to make the video ready for uploading. It is unclear how quickly Instagram&rsquo;s video will upload and play on mobile data networks. 
+
+  	A number of video-sharing applications, including Viddy, Cinemagram, SocialCam and others found initial popularity and success among users but struggled to maintain that momentum. A portion of Vine&rsquo;s success may have to do with its integration with Twitter, which helps Vine users seamlessly push out and share their videos to the microblogging site. Instagram&rsquo;s tight integration with Facebook could give a similar boost to the new service. 
+

@@ -1,0 +1,52 @@
+Wall Street Exhales as Volcker Rule Seen Sparing Market-Making\n\n
+
+  	Republished from Bloomberg by Michael J. Moore, Dakin Campbell and Laura Marcinek, Dec 11, 2013
+
+  	Wall Street banks avoided their worst fears of the Volcker rule after regulators crafted the ban on speculative trading to leave market-making operations intact.
+
+  	Goldman Sachs Group Inc., which among big U.S. banks gets the largest portion of its revenue from trading, climbed to the highest level in almost three months after five agencies approved the rule yesterday. Changes in the final wording broadened exemptions for banks&rsquo; market-making desks, which generate more than $40 billion a year in revenue.
+
+  	The rulemaking ends three years of uncertainty at banks over which activities would be permitted by the measure named for former Federal Reserve Chairman Paul Volcker. The more-than 900 pages of regulations and preamble leave watchdogs room to interpret wording and decide whether firms are engaging in permitted hedging and market-making as opposed to proprietary trading.
+
+  	&ldquo;It appears to be reasonable and one that the industry can live with,&rdquo; Richard Kovacevich, the former chairman and chief executive officer of San Francisco-based Wells Fargo &amp; Co., said in a phone interview. &ldquo;The devil is always in the details. The question is how do the regulators implement the rule?&rdquo;
+
+  	Banks also got an extra year to conform, with the deadline pushed to July 2015. Regulators recognized the &ldquo;incredible complexity&rdquo; inherent in the rule and businesses it covers, said H. Rodgin Cohen, senior chairman of law firm Sullivan &amp; Cromwell LLP, which represents Wall Street banks.
+
+  	&ldquo;There&rsquo;s this debate between rules and principles, and the reason people like rules is that they&rsquo;re clear,&rdquo; Cohen said. &ldquo;There is no way you could have clear rules here. This isn&rsquo;t like saying &lsquo;Your capital should be 7 percent, you can calculate 7 percent.&rsquo; You can&rsquo;t calculate market-making. You can&rsquo;t calculate proprietary trading.&rdquo;
+
+  	Market-making, or principal trading, is the business of using a firm&rsquo;s capital to buy and sell securities with customers, while profiting on the spread and movement in prices. Proprietary trading involves banks placing speculative bets with their own capital. The Volcker rule seeks to stop banks with federally insured deposits from making such trades that could threaten their stability.
+
+  	Concerns that the rule would turn the biggest fixed-income dealers into agency traders weren&rsquo;t realized, according to analysts at Evercore Partners Inc. Banks can hold inventory to meet expected customer demand, and proprietary trading in government bonds is allowed.
+
+  	Goldman Sachs climbed 1.2 percent to $169.73 in New York, the stock&rsquo;s highest close since it touched an almost three-year peak on Sept. 20. Morgan Stanley, which got 30 percent of its revenue in the 12 months through September from principal trading, climbed 1.3 percent to $30.77.
+
+  	In one example of the rules becoming less onerous, the final proposal holds banks to seven reporting metrics for monitoring trading positions, down from 17 in the original proposal, said Keith Horowitz, an analyst in New York at Citigroup Inc. Of the seven, most are &ldquo;already monitored and reported at the firm level,&rdquo; he wrote yesterday in a note to clients titled &ldquo;First Read on Volcker Rule Is Better Than Feared.&rdquo;
+
+  	Wall Street&rsquo;s five largest firms had as much as $44 billion in revenue at stake on the outcome of just the market-making provision, based on their earnings for the year ended Sept. 30. JPMorgan Chase &amp; Co., the biggest U.S. lender by assets, had as much as $11.4 billion riding on the answer, the data compiled by Bloomberg show.
+
+  	&ldquo;Despite a huge new reporting regime of quantitative measures, market-making can generally continue,&rdquo; Washington research firm Capital Alpha Partners LLC wrote in a note to clients, calling the requirement manageable. &ldquo;The final rule allows for more profit to derive from inventory.&rdquo;
+
+  	Wells Fargo, which exited some businesses in anticipation of the rule, said the final version won&rsquo;t materially hurt its financial results. Citigroup Chief Financial Officer John Gerspach said any impact may hinge on the details of how banks are required to prove compliance.
+
+  	&ldquo;There are a lot of interpretations that front-line regulators will have to make in the supervisory process that will significantly impact how effective and costly Volcker is going to be,&rdquo; said Andrew Olmem, a partner at Venable LLP and former Republican chief counsel on the Senate Banking Committee.
+
+  	Banks had attacked the rule after an initial draft in 2011, saying it could crimp market-making and hurt investors, or impede the hedging of risks, driving up borrowing costs for businesses and consumers. With that measure now written, the 2010 Dodd-Frank Act&rsquo;s regulatory overhaul is largely complete.
+
+  	Wall Street firms didn&rsquo;t get everything they wanted. While lenders can still put aggregate hedges on their portfolios, the risks have to be identified and the hedges documented.
+
+  	That provision became central to the Volcker rule debate after JPMorgan lost $6.2 billion last year in bets on credit derivatives. The so-called London Whale trades, conducted in the U.K. by the bank&rsquo;s chief investment office and nicknamed for their market impact, were described by JPMorgan executives as a portfolio hedge.
+
+  	&ldquo;You have to be very clear and specific in terms of any use of the hedge,&rdquo; said Kevin Petrasic, a partner at law firm Paul Hastings LLP. &ldquo;Banks will need to document and justify those hedges. It allows for a significant degree of supervisory and regulatory second-guessing.&rdquo;
+
+  	Banks also made limited gains in provisions relating to their investments and dealings with so-called covered funds, which include private-equity and hedge funds. While fully owned subsidiaries and mutual funds were exempted from the Volcker rule&rsquo;s definition of covered funds, venture capital and mezzanine credit funds were not, said Peter Fariel, a partner at law firm Rimon PC in Boston.
+
+  	&ldquo;The agencies took somewhat of a middle ground,&rdquo; said Fariel, formerly an associate general counsel at Bank of America Corp. &ldquo;I see it as better than the proposed regulations, but still, it will be a significant compliance obligation for bank fund sponsors going forward.&rdquo;
+
+  	Treasury Secretary Jacob J. Lew warned the top U.S. banks&rsquo; CEOs in a private meeting in October that the final Volcker rule would be tougher than Wall Street expected. Lew, who coordinated the regulators&rsquo; efforts, told executives that to get the rule right, he preferred to err on the side of making it tougher, a person familiar with the discussion said.
+
+  	&ldquo;In terms of expectations management, the guys on the side of regulation began to get people so concerned about really draconian things,&rdquo; said Michael Holland, chairman of Holland &amp; Co., who oversees more than $4 billion, including shares of New York-based JPMorgan and Citigroup. When the rule was released, &ldquo;it wasn&rsquo;t nearly so draconian, in which case the stocks said, &lsquo;Oh what a sigh of relief.&rsquo;&rdquo;
+
+  	Concern that the rule would be onerous stemmed from the lack of detail large banks received in the final days before the rule&rsquo;s release, three senior U.S. bankers said last week. The executives described the dearth of communication from regulators so close to the end of the rulemaking process as unusual.
+
+  	&ldquo;Uncertainty always creates a bit of a tail risk, so to us, the good news is some of the uncertainty is removed with no major surprises,&rdquo; said Devin Ryan, a bank analyst at JMP Group Inc. in New York. &ldquo;On the market-making front, where banks make most of their money, those activities will still be permitted.&rdquo;
+

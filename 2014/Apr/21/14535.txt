@@ -1,0 +1,68 @@
+What Does ‘Winning’ the Clean Energy Race Even Mean?\n\n
+
+  	From&nbsp;greentechmedia.com
+
+  	&nbsp;
+
+  	&mdash;&mdash;The &ldquo;clean energy race&rdquo;is a compelling narrative. But is it too simple?&mdash;&mdash; 
+
+  	The Pew Charitable Trusts, a public policy nonproft, is out with its annual report comparing investment in clean energy among the twenty richest countries in the world. Once again, China is held up as a threat to U.S. competitiveness. 
+
+  	The report concludes that China &quot;solidifies leadership in the global clean energ  y race&quot; by capturing 29 percent of investment among G-20 countries in 2013. 
+
+  	This type of competitive messaging is common in national policy circles. Democratic lawmakers on Capitol Hill are likely already making the chart below into a giant poster for floor speeches on how China is outpacing America in energy innovation.  
+
+http://dqbasmyouzti2.cloudfront.net/assets/content/cache/made/content/images/articles/2014_Clean_Energy_Race_580_480.png
+
+  	&ldquo;With extensive manufacturing capacity in the solar and wind sectors, growing domestic markets, and unequaled national targets for renewable energy, China is poised to be a leader in the world&rsquo;s clean energy marketplace for many years to come,&rdquo; conclude the authors of the Pew report.  
+
+  	Fair enough. China is dominating the solar manufacturing sector. The country installed more solar PV last year than the U.S. has ever installed. And it is the world&rsquo;s leading market for wind and solar hot water. The country is a strong force in clean energy deployment due to its top-down approach and long-term planning.  
+
+  	Pew&rsquo;s analysis, which uses data from Bloomberg New Energy Finance, is a very helpful tool for tracking broad regional and country-level figures on clean energy spending. But the framing of the report is somewhat problematic.  
+
+  	What does it mean to &ldquo;win&rdquo; the clean energy race, anyway?  
+
+  	In truth, I&rsquo;ve used this framing more than a few times myself. I also used to work at a progressive think tank that bases much of its policy work on the &ldquo;race&rdquo; narrative. And I read Tom Friedman&rsquo;s 2008 book, Hot, Flat and Crowded, in which he outlines how China is going to &ldquo;clean our clock&rdquo; in clean energy investment. So I fully understand why the framing is used: it helps provide a sense of urgency and competitive drive.  
+
+  	&ldquo;I think it&#39;s a big part of how to talk about it. Clearly, people&#39;s dander gets up anytime you talk about an economic race with the Chinese. I think it&#39;s a very helpful frame for us to be working in,&rdquo; said Michael Northrop, a director of sustainability at the Rockefeller Brother&#39;s Fund, in a 2010 interview when the original Pew report came out.  
+
+  	But with each passing year, this framing seems to lose its edge and meaning. It assumes that capturing the value of clean energy is a zero-sum game. It also takes a very isolated approach to all the other economic, environmental and health factors that surround the development of clean energy.  
+
+  	What if we considered all the other &ldquo;races&rdquo; that China is currently winning?  
+
+  	China is certainly kicking our butt in the consumption of coal:  
+
+http://dqbasmyouzti2.cloudfront.net/assets/content/cache/made/content/images/articles/Robert_Rapier_China_Coal_580_396.png
+
+  	And all that coal use in power plants with ineffective pollution controls is helping China win the race in deaths from air pollution. The World Bank estimates that China pays $300 billion every year in health costs and property damage from pollution -- dwarfing the $54.2 billion in clean energy investment within the country last year.  
+
+http://dqbasmyouzti2.cloudfront.net/assets/content/cache/made/content/images/articles/China_Air_Pollution_Shutterstock_580_377.png
+
+  	China has also pulled ahead of the U.S. as the world&rsquo;s biggest emitter of carbon dioxide. The country is racking up a very serious carbon debt:  
+
+http://dqbasmyouzti2.cloudfront.net/assets/content/cache/made/content/images/articles/Global_Carbon_Dioxide_Emissions_580_387.png
+
+  	Oh, and China also happens to be a world leader at stealing trade secrets from American companies, including ones developing clean energy technologies.  
+
+  	So in the years since folks have been talking about the clean energy race, China has become the world&#39;s biggest polluter and the world&#39;s deadliest in terms of air pollution, and it now consumes almost as much coal as the rest of the world combined.  
+
+  	Meanwhile, America has dropped its carbon emissions, has started shutting down old coal plants and is systematically reducing energy use. 
+
+  	Raw investment figures don&#39;t tell us much about how renewables are being deployed in China either. Last year, developers installed 12 gigawatts of solar, shattering records for any country. But interconnection issues have plagued the wind and solar industries in the country, and it&#39;s unclear how many of those projects are actually feeding the grid.  
+
+  	And then there are the positive impacts that come from other countries with a strong clean energy sector.  
+
+  	For example, if Denmark hadn&#39;t become an early leader in developing wind technologies, budding manufacturers in America may not have learned valuable technical lessons as quickly. We can thank Denmark for capturing the value of wind first, and then sending that value over to the U.S.  
+
+  	China&#39;s (oft-maligned) support for solar manufacturing may have an equally important impact on downstream solar in the U.S. Although China&#39;s heavy subsidies helped put American and European solar manufacturers out of business, Chinese producers have dramatically lowered global module prices -- in turn lowering the installed cost of PV and helping create tens of thousands of downstream installation jobs in America.  
+
+  	Who&#39;s the &quot;winner&quot; in that situation?  
+
+  	Finally, comparing yearly numbers doesn&#39;t always give us a full picture of the market. In 2007 and 2008, Spain had become a top contender in the early global solar race. But when it dismantled a grossly generous feed-in tariff, the market collapsed and investment ground to a halt. The same story has played out in other solar markets around the world. Being a leader in the long term doesn&#39;t necessarily mean attracting the most investment each year. It means providing consistency and a path for clean energy to scale with fewer subsidies.  
+
+  	In terms of consistency, China certainly beats America. The U.S. hasn&#39;t had a real energy policy since 2005, and it continually relies on short-term tax credits to support the industry on the federal level. With absolutely zero political will to price carbon or create more national support schemes for renewables, one could argue that America continues to lag in leadership.  
+
+  	Framing this lack of leadership in the context of a global race creates a compelling narrative that could feasibly influence decision-making on the federal level. However, it fails to take into account many other metrics like environmental health, research and development, quality of college and university programs, entrepreneurship, financial innovation, and the full suite of state and federal support.  
+
+  	In fairness to Pew, the report is an excellent benchmark for what&#39;s happening in the global clean energy industry. It&#39;s much more nuanced than just being a horse-race tracker. But the framing is part of a broader political narrative about who&#39;s behind and who&#39;s ahead in the yearly race. Figuring out who&#39;s &quot;winning&quot; in clean energy deployment is about more than just yearly investment numbers.  
+
