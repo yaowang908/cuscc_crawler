@@ -1,16 +1,23 @@
 <?php
-    ini_set('max_execution_time',3000);//5 mins execution time
+ini_set('max_execution_time',3000);//5 mins execution time
+include_once "simple_html_dom.php";
+echo "<html><head><title>PHP Crawler</title></head><body>";
+echo "<p>PHP Crawler</p>";
+    /*
+    $start_post_id='1';
+    $end_post_id='20';
+    crawl_cnusa($start_post_id,$end_post_id);
+    *///crawled all data
     
-    include_once "simple_html_dom.php";
-    echo "<html><head><title>PHP Crawler</title></head><body>";
-    echo "<p>PHP Crawler</p>";
-      
     
+
+echo "</body></html>";
+//end HTML
+function crawl_cnusa($start_post_id,$end_post_id){
     $url='http://cnusa.org/readnews.aspx?newsid=';
     //$post_id = '1000';
     //$url = $url.$post_id;
     $host = 'http://cnusa.org';
-    
 /*checked #
 *1-6990                 15
 *6990-13500      339
@@ -18,9 +25,9 @@
 *14300-14500    23
 *14500-14730    212
 */
-    $start_id='1';
+    $start_id=$start_post_id;
     //$end_id='14730';
-    $end_id='6990';
+    $end_id=$end_post_id;
     $crawled_num=0;
     
     ob_implicit_flush(true);
@@ -51,20 +58,12 @@ while($start_id<$end_id){
         ob_flush();
         $start_id++;
         $crawled_num++;
-        //sleep(1);
-   
-    
-}
+        //sleep(1);    
+    }
     echo "done!";
     echo "<span style='color:#00FF00'> ".$crawled_num." posts crawled!</span>";
     ob_end_flush();
-
-
-
-    //print_r(search_db($post_id));
-
-    echo "</body></html>";
-//end HTML
+}
 
 function manipulate_post($url,$host,$post_id,$result){
     
@@ -149,7 +148,6 @@ function manipulate_post($url,$host,$post_id,$result){
 
     add_to_db($item);//insert into database, if $post_id duplicate, skip it
 }
-
 
 function remove_CN_punctuation($keyword){
     $keyword = urlencode($keyword);
@@ -257,7 +255,6 @@ function curl_post($url, array $post = NULL, array $options = array())
     curl_close($ch); 
     return $result; 
 } 
-
 function regex_match($pattern,$target){
     if(preg_match_all($pattern,$target,$matches,PREG_SET_ORDER)){
         debug_to_console(count($matches)."matches found<br>");
@@ -275,7 +272,6 @@ function debug_to_console($data){
 
     echo $output;
 }
-
 function create_database_sqlite(){
     $db = new SQLite3('cuscc') or die('Unable to open database');
     $query ='CREATE TABLE IF NOT EXISTS posts(
