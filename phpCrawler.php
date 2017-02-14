@@ -3,13 +3,24 @@ ini_set('max_execution_time',3000);//5 mins execution time
 include_once "simple_html_dom.php";
 echo "<html><head><title>PHP Crawler</title></head><body>";
 echo "<p>PHP Crawler</p>";
-    /*
-    $start_post_id='1';
-    $end_post_id='20';
+    
+    /*$start_post_id='14730';
+    $end_post_id='14731';
     crawl_cnusa($start_post_id,$end_post_id);
-    *///crawled all data
+    *///crawled all posts
     
-    
+$search_result = search_db_by_post_id("14730");
+echo "ID is ".$search_result['id']."<br>";
+echo "Title is ".$search_result['post_title']."<br>"; 
+echo "Published on ".$search_result['post_month']."/".$search_result['post_day']."/".$search_result['post_year']."<br>";
+echo "Below is the post body:<br><br>";
+$search_result_post_body = file_get_contents($search_result['post_body_url']);
+
+$search_result_post_body=preg_replace("/(\\\\n)|(\n)/","<br>",$search_result_post_body);
+echo $search_result_post_body;
+
+var_dump(regex_match("/\/vendors\/cnusa.org\/upload\/.*?$/",$search_result_post_body));
+
 
 echo "</body></html>";
 //end HTML
@@ -293,7 +304,7 @@ function create_database_sqlite(){
     )';
     $db->exec($query) or die('Create db failed');
 }
-function add_to_db($item=array("post_title"=>"", "post_year"=>"2005","post_month"=>"1","post_day"=>"1","post_body_url"=>"","post_img1_url"=>"","post_img2_url"=>"","post_img3_url"=>"","post_img4_url"=>"","post_img5_url"=>"","post_img6_url"=>"","post_img7_url"=>"","post_img8_url"=>"")){
+function add_to_db($item=array("post_id"=>"","post_title"=>"", "post_year"=>"2005","post_month"=>"1","post_day"=>"1","post_body_url"=>"","post_img1_url"=>"","post_img2_url"=>"","post_img3_url"=>"","post_img4_url"=>"","post_img5_url"=>"","post_img6_url"=>"","post_img7_url"=>"","post_img8_url"=>"")){
     $db = new SQLite3('cuscc') or die('Unable to open database');
     $query = 'INSERT OR IGNORE INTO posts(post_id,post_title,post_year,post_month,post_day,post_body_url,post_img1_url,post_img2_url,post_img3_url,post_img4_url,post_img5_url,post_img6_url,post_img7_url,post_img8_url)
     VALUES(
@@ -316,9 +327,9 @@ function add_to_db($item=array("post_title"=>"", "post_year"=>"2005","post_month
     
 }
 
-function search_db($q){//$q==post_id
+function search_db_by_post_id($q){//$q==post_id
     $db = new SQLite3('cuscc') or die('Unable to open database');
-    $query = 'SELECT * FROM posts WHERE post_id = "'.$q.'"';
+    $query = "SELECT * FROM posts WHERE post_id = '".$q."'";
     $result = $db->query($query) or die('failed to search data');
     return $result->fetchArray();
 }
