@@ -4,12 +4,29 @@ include_once "simple_html_dom.php";
 echo "<html><head><title>PHP Crawler</title></head><body>";
 echo "<p>PHP Crawler</p>";
     
-    /*$start_post_id='14730';
-    $end_post_id='14731';
+   /* $start_post_id='14731';
+    $end_post_id='14732';
     crawl_cnusa($start_post_id,$end_post_id);
     *///crawled all posts
+//crawl_cnusa('14731','14732');
+$i = 1;
+while($i<14731){
+    if(search_db_by_post_id($i)){
+        $search_result = search_db_by_post_id($i);
+        $search_result_post_body = file_get_contents($search_result['post_body_url']);
+        if(is_null($search_result_post_body)){
+            echo $i." post has more divs";
+            $j = $i+1;
+            crawl_cnusa($i,$j);
+        }
+    }
+    echo $i." doesn't exist";
+    $i++;
     
-$search_result = search_db_by_post_id("14730");
+}
+
+/*
+$search_result = search_db_by_post_id("14731");
 echo "ID is ".$search_result['id']."<br>";
 echo "Title is ".$search_result['post_title']."<br>"; 
 echo "Published on ".$search_result['post_month']."/".$search_result['post_day']."/".$search_result['post_year']."<br>";
@@ -20,6 +37,7 @@ $search_result_post_body=preg_replace("/(\\\\n)|(\n)/","<br>",$search_result_pos
 echo $search_result_post_body;
 
 var_dump(regex_match("/\/vendors\/cnusa.org\/upload\/.*?$/",$search_result_post_body));
+*///echo from db
 
 
 echo "</body></html>";
@@ -106,8 +124,16 @@ function manipulate_post($url,$host,$post_id,$result){
     $post_body = $html->find('.date',0)->parent()->next_sibling();
     //$post_body_plaintext = $post_body->plaintext;
     
-    $post_body_segments = $post_body->find('p');//multiple result
-
+    //some post use div block instead of p block
+    $div_amount= count($post_body->find('div'));
+    $p_amount= count($post_body->find('p'));
+    if($div_amount > $p_amount){
+        $post_body_segments = $post_body->find('div');
+    }else{
+        $post_body_segments = $post_body->find('p');//multiple result
+    }
+        
+    
     //display current manipulating post
     //echo "post id is: ".$post_id."<br>";
     //echo "post title is: ".$post_title."<br>";
