@@ -9,7 +9,7 @@ echo "<p>PHP Crawler</p>";
     crawl_cnusa($start_post_id,$end_post_id);
     *///crawled all posts
 //crawl_cnusa('14731','14732');
-$i = 1;
+/*$i = 6915;
 while($i<14731){
     if(search_db_by_post_id($i)){
         $search_result = search_db_by_post_id($i);
@@ -19,14 +19,15 @@ while($i<14731){
             $j = $i+1;
             crawl_cnusa($i,$j);
         }
+         echo $i." exists but more ps";
     }
-    echo $i." doesn't exist";
-    $i++;
-    
+    $i++;   
 }
+*/ //some posts have more div than p elemets
 
-/*
-$search_result = search_db_by_post_id("14731");
+
+
+$search_result = search_db_by_post_id("14730");
 echo "ID is ".$search_result['id']."<br>";
 echo "Title is ".$search_result['post_title']."<br>"; 
 echo "Published on ".$search_result['post_month']."/".$search_result['post_day']."/".$search_result['post_year']."<br>";
@@ -34,10 +35,24 @@ echo "Below is the post body:<br><br>";
 $search_result_post_body = file_get_contents($search_result['post_body_url']);
 
 $search_result_post_body=preg_replace("/(\\\\n)|(\n)/","<br>",$search_result_post_body);
+
+$img_temp = array('0'=>$search_result['post_img1_url'],'1'=>$search_result['post_img2_url'],'2'=>$search_result['post_img3_url'],'3'=>$search_result['post_img4_url'],'4'=>$search_result['post_img5_url'],'5'=>$search_result['post_img6_url'],'6'=>$search_result['post_img7_url'],'7'=>$search_result['post_img8_url']);
+$img_toinsert = array();
+foreach($img_temp as $key => $value){
+    if($value!==''){
+        $img_toinsert[]="<img src='".$value."'/>";
+    }
+}
+//$search_result_post_body = preg_replace("/\/vendors\/cnusa.org\/upload\/.*?.(jpg)|(png)/",
+                                                        //array_shift($img_toinsert),$search_result_post_body);
+
+$search_result_post_body =preg_replace_callback('/\/vendors\/cnusa.org\/upload\/.*?.(jpg)|(png)/', function($matches) use (&$img_toinsert) {
+    return array_shift($img_toinsert);//the &$img_toinsert make the later array_shift() affect the $matches variable, make the magic happen
+}, $search_result_post_body);
 echo $search_result_post_body;
 
-var_dump(regex_match("/\/vendors\/cnusa.org\/upload\/.*?$/",$search_result_post_body));
-*///echo from db
+//var_dump(regex_match("/\/vendors\/cnusa.org\/upload\/.*?$/",$search_result_post_body));
+
 
 
 echo "</body></html>";
